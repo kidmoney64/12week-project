@@ -1,11 +1,16 @@
 body {
     background-color: coral;
+    font-style: ;
 }
 
 header{
+    font-size: 20px;
     text-align: center;
     padding: 1cm;
-    width: 100%;
     background-color: black;
     color: white;
+}
+
+.searchbar{
+    text-align: center;
 }
