@@ -1,6 +1,4 @@
  
-
- 
 function getdata() {
 
     var inputValue = $("#searchtext").val();
@@ -18,5 +16,4 @@ function getdata() {
     });
 
 }
-
 
