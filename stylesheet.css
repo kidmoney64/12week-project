@@ -9,8 +9,12 @@ header{
     padding: 1cm;
     background-color: black;
     color: white;
+    border: 0px;
+    margin: -1cm -1cm 0cm -1cm;
 }
 
 .searchbar{
     text-align: center;
+    
 }
+
