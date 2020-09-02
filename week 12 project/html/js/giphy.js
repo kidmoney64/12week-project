@@ -3,7 +3,7 @@ function getdata() {
 
     var inputValue = $("#searchtext").val();
 
-    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${ inputValue }&api_key=mHWTM2zQ75bsA37jtTPoHVrd3Bf0JXdy&limit=20`);
+    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${ inputValue }&api_key=T4Qmn41LExNQ1yz9ItjjQtB8RZ64AyVp&limit=20`);
     xhr.done(function(response) { 
         console.log("success got data", response);
         var jiffs = response.data
@@ -21,4 +21,3 @@ function getdata() {
     });
 
 }
-
