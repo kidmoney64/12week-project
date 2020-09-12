@@ -26,8 +26,7 @@ header {
 .jiffs{
    display: flex;
    flex-wrap: wrap;
-   margin: 10px;
-   padding: 10px;
+   
 
 }
 footer {
