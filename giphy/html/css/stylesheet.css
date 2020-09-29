@@ -22,13 +22,13 @@ header {
     font-size: 20px;
     
 }
+.giphy-image{
+  flex-wrap: wrap;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  }
 
-.jiffs{
-   display: flex;
-   flex-wrap: wrap;
-   
-
-}
 footer {
     position: fixed;
     bottom: 0;

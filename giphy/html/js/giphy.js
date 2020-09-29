@@ -1,45 +1,22 @@
-/*function getdata() {
-
-    var inputValue = $("#searchtext").val();
-
-    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${ inputValue }&api_key=T4Qmn41LExNQ1yz9ItjjQtB8RZ64AyVp&limit=20`);
-    xhr.done(function(response) { 
-        console.log("success got data", response);
-        var jiffs = response.data
-        $('.jiffs').empty();
-        for (i in jiffs){
-        $('.jiffs').append("<img src='jiffs[i].images.original.url'/>")
-        };
-    var input = document.getElementById("searchtext");
-        input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("searchgifs").click();
-  }
-});
-    });
-
-}
-*/
 function getdata() {
 
-    var inputValue = $("#searchtext").val();
+  var inputValue = $("#searchtext").val();
 
-    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${ inputValue }&api_key=T4Qmn41LExNQ1yz9ItjjQtB8RZ64AyVp&limit=20`);
-    xhr.done(function(response) { 
-        console.log("success got data", response);
-        var jiffs = response.data
-        $('.jiffs').empty();
-        for (i in jiffs){
-        $('.jiffs').append("<img src='"+jiffs[i].images.original.url+"' styles='height:100px; width:100px; padding: 100px;'/>")
-        };
-    var input = document.getElementById("searchtext");
-        input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("searchgifs").click();
-  }
+  var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${ inputValue }&api_key=T4Qmn41LExNQ1yz9ItjjQtB8RZ64AyVp&limit=20`);
+  xhr.done(function(response) { 
+      console.log("success got data", response);
+      var jiffs = response.data
+      $('.jiffs').empty();
+      for (let jiff of jiffs){
+      $('.jiffs').append(`<img src="${jiff.images.original.url}" alt="giphy" class="giphy-image" />`)
+      };
+  var input = document.getElementById("searchtext");
+      input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+      event.preventDefault();
+      document.getElementById("searchgifs").click();
+}
 });
-    });
+  });
 
 }
