@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -96,4 +96,9 @@ footer {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#jungle{
+  height: 200px;
+  width: 500px;
 }
